@@ -1,0 +1,78 @@
+{% extends 'englevel/ebase.html' %}
+{% load static%}
+{% block content %}
+
+  <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Add Equipment</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Help</button>
+            </div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="Input" class="form-label">ID:</label>
+        <input type="text" class="form-control" id="id">
+    </div>
+    <div class="mb-3">
+        <label for="Input" class="form-label">Name of Equipment:</label>
+        <input type="text" class="form-control" id="name">
+    </div>
+    <div class="mb-3">
+        <label for="Input" class="form-label">Location:</label>
+        <input type="text" class="form-control" id="Location">
+    </div>
+    <div class="mb-3">
+        <label for="Input" class="form-label">Manufactuer:</label>
+        <input type="text" class="form-control" id="Manufactuer">
+    </div>
+    <div class="mb-3">
+        <label for="Input" class="form-label">Country:</label>
+        <input type="text" class="form-control" id="country">
+    </div>
+    <div class="mb-3">
+        <label for="Input" class="form-label">Model:</label>
+        <input type="text" class="form-control" id="Model">
+    </div>
+    <div class="mb-3">
+        <label for="Input" class="form-label">Serial Number:</label>
+        <input type="text" class="form-control" id="serial-number">
+    </div>
+    <div class="mb-3">
+        <label for="Input" class="form-label">Risk Level:</label>
+        <input type="text" class="form-control" id="risk-level">
+    </div>
+    <div class="mb-3">
+        <label for="Input" class="form-label">Class:</label>
+        <input type="text" class="form-control" id="class">
+    </div>
+    <div class="mb-3">
+        <label for="Input" class="form-label">BioCode:</label>
+        <input type="text" class="form-control" id="biocode">
+    </div>
+    <div class="mb-3">
+        <label for="Input" class="form-label">Medical Agent:</label>
+        <input type="text" class="form-control" id="Agent">
+    </div>
+    <div class="mb-3">
+        <label for="Input" class="form-label">Dilvery Date:</label>
+        <input type="text" class="form-control" id="dilveryDate">
+    </div>
+    <div class="mb-3">
+        <label for="Input" class="form-label">End Warrenty Date:</label>
+        <input type="text" class="form-control" id="warrentyDate">
+    </div>
+    <div class="mb-3">
+        <label for="Input" class="form-label">Spare Parts:</label>
+        <input type="text" class="form-control" id="spare">
+    </div>
+
+    <!--button-->
+    <div class="d-grid gap-2 col-auto mx-auto">
+        <button type="submit" class="btn btn-primary">Add</button>
+    </div>
+</main>
+</div>
+</div>
+{% endblock content %}

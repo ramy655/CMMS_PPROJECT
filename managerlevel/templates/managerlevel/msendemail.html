@@ -1,0 +1,25 @@
+{% extends 'managerlevel/mbase.html' %}
+{% load static%}
+{% block content %}
+
+<!--content-->
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Send Mail</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Help</button>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Email</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+</main>
+</div>
+</div>
+{% endblock content %}

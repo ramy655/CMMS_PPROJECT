@@ -1,0 +1,54 @@
+ <!--start list-->
+ <div class="container-fluid">
+    <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="sidebar-sticky pt-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'engprofile' %}">
+                            <span data-feather="home"></span> Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'notifications' %}">
+                            <span data-feather="home"></span> Notifications
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'engdepartments' %}">
+                            <span data-feather="file"></span> Departments
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'equipments' %}">
+                            <span data-feather="users"></span> Medical Equipments
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'workorder' %}">
+                            <span data-feather="shopping-cart"></span> Work Orders
+                        </a>
+                    </li>
+                </ul>
+
+                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span> Reports </span>
+                    <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+                        <span data-feather="plus-circle"></span>
+                    </a>
+                </h6>
+                <ul class="nav flex-column mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'connectwithcompany' %}">
+                            <span data-feather="file-text"></span> Connect with companies
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'esendmail' %}">
+                            <span data-feather="file-text"></span> Send Mail
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--end list-->

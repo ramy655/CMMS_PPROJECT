@@ -1,0 +1,62 @@
+{% extends 'managerlevel/mbase.html' %}
+{% load static%}
+{% block content %}
+
+ <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Request For Service</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Help</button>
+            </div>
+            <div class="btn-group mr-2">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Print</button>
+            </div>
+        </div>
+    </div>
+    <form class="row g-3">
+        <div class="col-md-6">
+            <label for="input" class="form-label">Requester Name:</label>
+            <input type="text" class="form-control" id="RequestName">
+        </div>
+        <div class="col-md-6">
+            <label for="input" class="form-label">Requester Phone Number:</label>
+            <input type="text" class="form-control" id="RequesterPhoneNumber">
+        </div>
+        <div class="col-md-6">
+            <label for="input" class="form-label">Equipment/Description:</label>
+            <input type="text" class="form-control" id="Equipment">
+        </div>
+        <div class="col-md-6">
+            <label for="input" class="form-label">Equipment ID:</label>
+            <input type="text" class="form-control" id="EquipmentID">
+        </div>
+        <div class="col-md-6">
+            <label for="input" class="form-label">Department:</label>
+            <input type="text" class="form-control" id="Department">
+        </div>
+        <div class="col-md-6">
+            <label for="input" class="form-label">Equipment Serial:</label>
+            <input type="text" class="form-control" id="Equipment Serial">
+        </div>
+        <div class="col-md-6">
+            <label for="input" class="form-label">Service Requested(Repair/Transfer/Training):</label>
+            <input type="text" class="form-control" id="ServiceRequested">
+        </div>
+        <div class="col-md-6">
+            <label for="input" class="form-label">Detailed Problem:</label>
+            <input type="text" class="form-control" id="DetailedProblem">
+        </div>
+    </form>
+    <div class="mb-3">
+        <label for="Input" class="form-label">Supervisor/Head Of Department:</label>
+        <input type="text" class="form-control" id="supervisorOfDepartment">
+    </div>
+    <!--Buttons-->
+    <div class="mb-12 text-center">
+        <button class="btn btn-primary" type="button">Request</button>
+    </div>
+</main>
+</div>
+</div>
+{% endblock content %}

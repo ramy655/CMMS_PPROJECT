@@ -1,0 +1,28 @@
+{% extends 'managerlevel/mbase.html' %}
+{% load static%}
+{% block content %}
+
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Add Equipment</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Help</button>
+            </div>
+        </div>
+    </div>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+    <div class="card-body">
+        {{form_equipment}}
+    </div>
+
+    <!--button-->
+    <div class="d-grid gap-2 col-auto mx-auto">
+        <button type="submit" class="btn btn-primary">Add</button>
+    </div>
+    </form>
+</main>
+</div>
+</div>
+{% endblock content %}

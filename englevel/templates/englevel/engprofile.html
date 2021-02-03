@@ -1,0 +1,73 @@
+{% extends 'englevel/ebase.html' %}
+{% load static%}
+{% block content %}
+
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Profile</h1>
+    </div>
+    <div class="mb-3">
+        <div class="image-preview" id="imagePreview">
+            <img src="{% static 'images\ramy.jpg' %}" class="image-preview__image" alt="UserImage">
+            <span class="image-preview__default-text">User Image</span>
+        </div>
+    </div>
+    <form>
+        <div class="mb-3">
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="Input" class="form-label">Job:</label>
+            <input type="text" class="form-control" id="job">
+        </div>
+
+        <!--selector-->
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Admin
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>
+        <!--end-->
+
+        <div class="mb-3">
+            <label for="Input" class="form-label">Email address:</label>
+            <input type="email" class="form-control" id="Input" aria-describedby="emailHelp" placeholder="name@example.com">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="Input" class="form-label">UserName:</label>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">User Image:</label>
+            <input class="form-control" type="file" id="inpFile" name="inpFile">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+            <div id="passwordHelpBlock" class="form-text">
+                Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Update Profile</button>
+    </form>
+</main>
+</div>
+</div>
+{% endblock content %}

@@ -1,0 +1,69 @@
+{% extends 'englevel/ebase.html' %}
+{% load static%}
+{% block content %}
+
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Assigned Equipments</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Help</button>
+            </div>
+            <div class="btn-group mr-2">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Print</button>
+            </div>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Equipment</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td> <a href="#">ECG</a> </td>
+                    <td>CATH.UNIT</td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td> <a href="#">MONITOR 1</a> </td>
+                    <td>CATH.UNIT</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td> <a href="#">MONITOR 2</a> </td>
+                    <td>CATH.UNIT</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td> <a href="#">MONITOR 3</a> </td>
+                    <td>CATH.UNIT</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td> <a href="#">MONITOR 4</a> </td>
+                    <td>CATH.UNIT</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td> <a href="#">...</a> </td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td> <a href="#">...</a> </td>
+                    <td>...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+</div>
+</div>
+{% endblock content %}

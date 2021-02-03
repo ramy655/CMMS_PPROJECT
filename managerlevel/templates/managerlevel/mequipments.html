@@ -1,0 +1,61 @@
+{% extends 'managerlevel/mbase.html' %}
+{% load static%}
+{% block content %}
+
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Medical Equipments</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Help</button>
+            </div>
+            <div class="btn-group mr-2">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Print</button>
+            </div>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Equipment</th>
+                    <th>serial_number</th>
+                    <th>location</th>
+                    <th>manufacture</th>
+                    <th>country</th>
+                    <th>model_device</th>
+                    <th>Department_of_device</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for m in medical %}
+                
+                    <tr id = " mhide m{{m.Department_of_device.id}}">
+                        <td>{{ m.id }}</td>
+                        <td>{{ m.name }}</td>
+                        <td>{{ m.serial_number }}</td>
+                        <td>{{ m.location }}</td>
+                        <td>{{ m.manufacture }}</td>
+                        <td>{{ m.country }}</td>
+                        <td>{{ m.model_device }}</td>
+                        <td>{{m.Department_of_device}}</td>
+                        <td> <a href="{% url 'update' m.id %}" type="button" class="btn btn-primary"> Edit</a> </td>
+                        <td> <a href="{% url 'delete' m.id %}" type="button" class="btn btn-primary"> Delete</a> </td>
+
+                    </tr>
+                
+                    {% endfor %}
+            </tbody>
+        </table>
+
+        <!--button-->
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <a class="btn btn-primary" type="button" href="{% url 'addequipment'%}">Add Equipment</a>
+        </div>
+    </div>
+</div>
+</main>
+</div>
+{% endblock content %}
+
